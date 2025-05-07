@@ -1,0 +1,177 @@
+/* #region Debug */
+.debug {
+
+    * {
+        border: 1px dashed red;
+    }
+
+    header {
+        background-color: aqua;
+    }
+
+    main {
+        background-color: blanchedalmond;
+        min-height: 1200px;
+    }
+
+    footer {
+        background-color: thistle;
+    }
+
+    section>.container {
+        min-height: 300px;
+        background-color: red;
+    }
+
+    .container-sm {
+        min-height: 300px;
+        background-color: aquamarine;
+    }
+
+    .col-60 {
+        height: 300px;
+        background-color: pink;
+    }
+
+    .col-40 {
+        height: 300px;
+        background-color: #458933;
+    }
+
+    .col-lg {
+        min-height: 300px;
+        background-color: #458EF7;
+    }
+
+    .col {
+        background-color: #24272A;
+    }
+}
+
+/* #endregion Debug */
+
+/* #region Utilities */
+
+:root {
+    /* #region Debug variables */
+        --ly-debug-header-light-bg-color:#B6D7E4;
+        --ly-debug-header-contrast-bg-color:#D2A741;
+        --ly-debug-block1-dark-bg-color:#000085;
+        --ly-debug-block1-contrast-bg-color:#E087E8;
+        --ly-debug-block_odd-light-bg-color:#FFFFFF;
+        --ly-debug-col1-bg-color:#458EF7;
+        --ly-debug-col2-bg-color:#F5C3CB;
+        --ly-debug-block_even-bg-color: #D3D3D3;
+        --ly-debug-contrast-color: #458933;
+        --ly-debug-footer-dark-bg-color: #24272A;
+        --ly-debug-footer-col1-bg-color: #E18683;
+        --ly-debug-footer-col2-bg-color: #55AFA9;
+        --ly-debug-footer-col3-bg-color: #A0FCD6;
+        --ly-debug-footer-btn-bg-color: #F4B9C2;
+    /* #endregion Debug variables */
+    }
+    
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 1200px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-sm {
+    max-width: 900px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+section {
+    padding: 1rem 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* #endregion Utilities */
+
+/* #region Header */
+
+header {
+
+    padding: 1rem 0;
+    
+    .logo, .login {
+        flex-grow: 1;
+    }
+
+    .login {
+        text-align: right;
+    }
+
+    .menu {
+        flex-grow: 2;
+        justify-content: center;
+        gap: 1rem;
+        list-style: none;
+    }
+
+}
+
+/* #endregion Header */
+
+/* #region Main */
+
+main {
+
+    #jumbotron {
+        background-color: #D3D3D3;
+        padding: 2rem 0;
+    }
+
+}
+
+/* #endregion Main */
+
+/* #region Footer */
+footer {
+    padding: 2rem 0;
+
+    .top {
+        .col-lg {
+            flex-grow: 2;
+        }
+
+        .col {
+            flex-grow: 1;
+        }
+    }
+
+    .bottom {
+        border-top: 1px solid black;
+        padding: 1rem 0;
+        justify-content: space-between;
+    }
+}
+/* #endregion Footer */
