@@ -62,6 +62,10 @@ body {
     display: flex;
 }
 
+.even {
+    background-color: var(--ly-bg-secondary);
+}
+
 .odd {
     background-color: var(--ly-bg-primary);
 }
@@ -72,7 +76,6 @@ body {
 
 .col-40 {
     width: 40%;
-    height: 90%;
 }
 
 img {
@@ -175,31 +178,64 @@ main {
         height: 500px;
         color: var(--ly-text-dark);
         align-items: center;
+        #box-1 {
+            align-items: flex-end;
+            justify-content: space-around;
+            height: 100%;
+        
+            .col-60 {
+                height: 100%;
+            }
+        
+            .col-40 {
+                height: 90%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                h2 {
+                    line-height: 2.5rem;
+                    font-size:38px;
+                    width: 80%;
+                    height: 50%
+                }
+                p {
+                    width: 80%;
+                    line-height: 1.5rem;
+                }
+            }
+            }
     }
 
-    #box-1 {
-    align-items: flex-end;
-    justify-content: space-around;
-    height: 100%;
-    }
+    #meet {
+        height: 500px;
+        color: var(--ly-text-dark);
+        align-items: center;
 
-    #box-1>.col-60 {
-    
-    }
-
-    #box-1>.col-40 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        h2 {
-            line-height: 2.5rem;
-            font-size:38px;
-            width: 80%;
-            height: 50%
+        #box-2 {
+            align-items: flex-end;
+            height: 100%;
         }
-        p {
-            width: 80%;
-            line-height: 1.5rem;
+
+        .col-60 {
+            justify-content: center;
+            height: 100%;
+        }
+    
+        .col-40 {
+            height: 75%;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            h2 {
+                line-height: 2.5rem;
+                font-size:38px;
+                width: 80%;
+                height: 30%
+            }
+            p {
+                width: 80%;
+                line-height: 1.5rem;
+            }
         }
 
     }
