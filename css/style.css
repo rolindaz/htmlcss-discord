@@ -145,7 +145,7 @@ main {
         margin: 0 auto;
     }
 
-    #download-btn {
+    .download-btn {
         border: 1px solid var(--ly-btn-light);
         border-radius: 50vh;
         padding: 0.5rem 1.5rem;
@@ -270,6 +270,31 @@ main {
             }
             }
     }
+
+    #video-call {
+        height: 900px;
+        align-items: center;
+        #box-4 {
+            height: 90%;
+            text-align: center;
+        }
+        h2 {
+            font-size: 38px;
+            padding: 1rem 0;
+        }
+        p {
+            padding: 1rem 2rem;
+        }
+        h3 {
+            background-image: url(../img/stars.svg);
+            background-repeat: no-repeat;
+            background-position: center top;
+            font-size: 26px;
+            padding: 1.5rem;
+        }
+    }
+
+
 }
 
 /* #endregion Main */
