@@ -239,7 +239,37 @@ main {
         }
 
     }
-
+    
+    #fandom {
+        height: 450px;
+        color: var(--ly-text-dark);
+        align-items: center;
+        #box-3 {
+            align-items: center;
+            height: 100%;
+        
+            .col-60 {
+                height: 100%;
+            }
+        
+            .col-40 {
+                height: 90%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                h2 {
+                    line-height: 2.5rem;
+                    font-size:38px;
+                    width: 80%;
+                    height: 30%
+                }
+                p {
+                    width: 80%;
+                    line-height: 1.5rem;
+                }
+            }
+            }
+    }
 }
 
 /* #endregion Main */
