@@ -5,10 +5,6 @@
         border: 1px dashed red;
     }
 
-    header {
-        background-color: aqua;
-    }
-
     main {
         background-color: blanchedalmond;
         min-height: 1200px;
@@ -53,8 +49,8 @@
 /* #region Utilities */
 
 :root {
-    /* #region Debug variables */
-        --ly-debug-header-light-bg-color:#B6D7E4;
+    /* #region color variables */
+        --ly-header-bg-color:#3D60D8;
         --ly-debug-header-contrast-bg-color:#D2A741;
         --ly-debug-block1-dark-bg-color:#000085;
         --ly-debug-block1-contrast-bg-color:#E087E8;
@@ -68,7 +64,7 @@
         --ly-debug-footer-col2-bg-color: #55AFA9;
         --ly-debug-footer-col3-bg-color: #A0FCD6;
         --ly-debug-footer-btn-bg-color: #F4B9C2;
-    /* #endregion Debug variables */
+    /* #endregion color variables */
     }
     
 
@@ -80,6 +76,7 @@
 
 body {
     min-width: 1200px;
+    font-family: Ggsans,sans-serif;
 }
 
 .container {
@@ -120,21 +117,29 @@ img {
 
 header {
 
+    background-color: var(--ly-header-bg-color);
+
     padding: 1rem 0;
     
-    .logo, .login {
+    #logo, #login {
         flex-grow: 1;
     }
 
-    .login {
-        text-align: right;
+    #login {
+        justify-content: end;
+        button {
+            padding: 0 0.7rem;
+            border-radius: 35%;
+        }
     }
 
     .menu {
         flex-grow: 2;
-        justify-content: center;
+        justify-content: space-evenly;
         gap: 1rem;
         list-style: none;
+        color: white;
+        align-items: center;
     }
 
 }
