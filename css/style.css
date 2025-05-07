@@ -14,21 +14,6 @@
         background-color: thistle;
     }
 
-    section>.container {
-        min-height: 300px;
-        background-color: red;
-    }
-
-    .col-60 {
-        height: 300px;
-        background-color: pink;
-    }
-
-    .col-40 {
-        height: 300px;
-        background-color: #458933;
-    }
-
     .col-lg {
         min-height: 300px;
         background-color: #458EF7;
@@ -77,8 +62,8 @@ body {
     display: flex;
 }
 
-.odd-box {
-    background-color: var();
+.odd {
+    background-color: var(--ly-bg-primary);
 }
 .col-60 {
     width: 60%;
@@ -150,7 +135,6 @@ main {
     }
 
     p {
-        color: var(--ly-text-light);
         text-align: center;
         width: 70%;
         margin: 0 auto;
@@ -182,6 +166,16 @@ main {
         line-height: 2rem;
         width: 50%;
         margin: 0 auto;
+        color: var(--ly-text-light);
+    }
+
+    #box-1 {
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        color: var(--ly-text-dark);
+        width: 70%;
+
     }
 
 }
