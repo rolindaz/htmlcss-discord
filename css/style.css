@@ -49,12 +49,12 @@
 
 body {
     min-width: 1200px;
-    font-family: Ggsans,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
     max-width: 1200px;
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
 }
 
@@ -67,18 +67,20 @@ body {
 }
 .col-60 {
     width: 60%;
+    height: 100%;
 }
 
 .col-40 {
     width: 40%;
-}
-
-section {
-    padding: 1rem 0;
+    height: 90%;
 }
 
 img {
     max-width: 100%;
+}
+
+section {
+    width: 100%;
 }
 
 /* #endregion Utilities */
@@ -134,7 +136,7 @@ main {
         text-align: center;
     }
 
-    p {
+    #jumbotron p {
         text-align: center;
         width: 70%;
         margin: 0 auto;
@@ -169,12 +171,36 @@ main {
         color: var(--ly-text-light);
     }
 
-    #box-1 {
+    #invite {
         height: 500px;
-        justify-content: center;
-        align-items: center;
         color: var(--ly-text-dark);
-        width: 70%;
+        align-items: center;
+    }
+
+    #box-1 {
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 100%;
+    }
+
+    #box-1>.col-60 {
+    
+    }
+
+    #box-1>.col-40 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        h2 {
+            line-height: 2.5rem;
+            font-size:38px;
+            width: 80%;
+            height: 50%
+        }
+        p {
+            width: 80%;
+            line-height: 1.5rem;
+        }
 
     }
 
