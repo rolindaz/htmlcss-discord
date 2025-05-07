@@ -21,7 +21,7 @@
 
     .container-sm {
         min-height: 300px;
-        background-color: aquamarine;
+        background-color: rgba(127, 255, 212, 0);
     }
 
     .col-60 {
@@ -51,6 +51,10 @@
 :root {
     /* #region color variables */
         --ly-header-bg-color:#3D60D8;
+        --ly-text-light:white;
+        --ly-text-dark:black;
+        --ly-btn-light:white;
+        --ly-btn-dark:black;
         --ly-debug-header-contrast-bg-color:#D2A741;
         --ly-debug-block1-dark-bg-color:#000085;
         --ly-debug-block1-contrast-bg-color:#E087E8;
@@ -129,7 +133,7 @@ header {
         justify-content: end;
         button {
             padding: 0 0.7rem;
-            border-radius: 35%;
+            border-radius: 50vh;
         }
     }
 
@@ -138,7 +142,7 @@ header {
         justify-content: space-evenly;
         gap: 1rem;
         list-style: none;
-        color: white;
+        color: var(--ly-text-light);
         align-items: center;
     }
 
@@ -153,6 +157,46 @@ main {
     #jumbotron {
         background-color: #D3D3D3;
         padding: 2rem 0;
+        background-image: url(../img/jumbo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 440px;
+    }
+
+    h1 {
+        color: var(--ly-text-light);
+        text-align: center;
+    }
+
+    p {
+        display: block;
+        color: var(--ly-text-light);
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #download-btn {
+        border: 1px solid var(--ly-btn-light);
+        border-radius: 50vh;
+        padding: 0.5rem 1.5rem;
+        background-color: var(--ly-btn-light);
+        color: var(--ly-text-dark);
+    }
+
+    #open-btn {
+        border-radius: 50vh;
+        padding: 0.5rem 1.5rem;
+        background-color: var(--ly-btn-dark);
+        color: var(--ly-text-light);
+    }
+
+    #jumbotron>div .d-flex {
+        justify-content: space-around;
+    }
+
+    #jumbotron>* {
+        
     }
 
 }
