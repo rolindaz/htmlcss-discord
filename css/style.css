@@ -6,21 +6,7 @@
     }
 
     main {
-        background-color: blanchedalmond;
         min-height: 1200px;
-    }
-
-    footer {
-        background-color: thistle;
-    }
-
-    .col-lg {
-        min-height: 300px;
-        background-color: #458EF7;
-    }
-
-    .col {
-        background-color: #24272A;
     }
 }
 
@@ -37,6 +23,8 @@
         --ly-btn-dark:black;
         --ly-bg-primary:white;
         --ly-bg-secondary:#F6F6F6;
+        --ly-footer-bg-color: #24272A;
+        --ly-text-brand: #7688D4;
     /* #endregion color variables */
     }
     
@@ -86,6 +74,18 @@ section {
     width: 100%;
 }
 
+.top {
+    height: 50%;
+    padding: 1rem;
+}
+
+/*.border-wave {
+    border-image: url(../img/wave.svg);
+    border-image-width: 30%;
+    border-image-repeat: repeat;
+    border-image-outset: 50px 0px 0px 0px;
+}*/
+
 /* #endregion Utilities */
 
 /* #region Header */
@@ -132,19 +132,17 @@ main {
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 440px;
+        h1 {
+            color: var(--ly-text-light);
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+        }
     }
-
-    h1 {
-        color: var(--ly-text-light);
-        text-align: center;
-    }
-
-    #jumbotron p {
-        text-align: center;
-        width: 70%;
-        margin: 0 auto;
-    }
-
+    
     .download-btn {
         border: 1px solid var(--ly-btn-light);
         border-radius: 50vh;
@@ -237,7 +235,6 @@ main {
                 line-height: 1.5rem;
             }
         }
-
     }
     
     #fandom {
@@ -301,15 +298,44 @@ main {
 
 /* #region Footer */
 footer {
+    background-color: var(--ly-footer-bg-color);
     padding: 2rem 0;
+    height: 500px;
 
     .top {
+        line-height: 1.5rem;
         .col-lg {
-            flex-grow: 2;
+            flex-grow: 4;
+            h3 {
+                font-size: 24px;
+                color: var(--ly-text-brand);
+            }
+            img {
+                display: inline-block;
+            }
+            p {
+                color: var(--ly-text-light);
+                font-size: x-small;
+            }
+            #icons {
+                color: var(--ly-text-light);
+                i {
+                    padding: 0.5rem;
+                }
+            }
         }
 
         .col {
+            ul {
+                list-style: none;
+                li:not(h5) {
+                    color: var(--ly-text-light);
+                }
+            }
             flex-grow: 1;
+            h5 {
+                color: var(--ly-text-brand);
+            }
         }
     }
 
